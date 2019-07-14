@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabajo Final css</title>
+    <style>
+        header{
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        #cabecera{
+            background-color: blue;
+            color: azure;
+            height: 80px;
+            width: 100%;
+        }    
+       #titulo{
+            display: inline-block;
+            text-align: center;
+            padding-left: 20%;
+        }
+        #titulo h1{
+            font-size: 50px;
+        }
+        body{
+            background-color: azure;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        footer{
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        #pie{
+            background-color: blue;
+            height: 40px;
+            color: azure;
+            text-align: center;
+        }
+        #pie a{
+            color: aqua;
+        }
+        #columna1{
+            float: left;
+            width: 30%;
+            padding-top: 10%;
+            padding-left: 5%;
+        }
+        #columna1 ul {
+            list-style-type: square;
+        }
+        #columna2{
+            width: 30%;
+            display: inline-block;
+            padding-top: 100px;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+        #columna2 img{
+            width: 30%;
+        }
+        #columna2 section{
+            border: 2px solid blue;
+            margin: 2%;
+        }
+       
+        #columna3{
+            float: right;
+            width: 30%;
+            padding-top: 10%;
+        }
+        h2, h3{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="cabecera">
+            <img src="src/logo.jpg" alt="logo" height="80px" >  
+            <div id="titulo">
+                    <h1>Tu blog de recetas sencillas</h1>
+                </div>
+                  
+        </div>
+        
+    </header>
+    <article id="columna1">
+        <section>
+            <h2>Busca aqui que tipo de plato quieres</h2>
+            <ul>
+                <li>Entrantes</li>
+                    <ul>
+                        <li><a href="#ensalada-aguacate">Ensalada de aguacate
+                        <li><a href="#turron-salado"> Turrón salado</a></li>
+                        <li><a href="#piruletas-parmesano">Piruletas de parmesano</a></li>
+                    </ul>
+                <li>Platos principales</li>
+                    <ul>
+                        <li><a href="#frittata-calabacin">Frittata de calabacín, guisantes y queso de cabra</a></li>
+                        <li><a href="#menestra-riojana">Menestra de verduras a la Riojana</a></li>
+                    </ul>
+                <li>Postres</li>
+                    <ul>
+                        <li><a href="#dorayakis">Dorayakis</a></li>
+                        <li><a href="#tarta-guinness">Tarta Guinness</a></li>
+                    </ul>
+            </ul>
+        </section>
+    </article>
+    <article id="columna2">
+        <section>
+            <a name="ensalada-aguacate">
+                <h3>Ensalada de aguacate</h3>
+                <img src="src/ensalada-aguacate.png" alt="ensalada de aguacate">
+            </a>
+        </section>
+        <section>
+            <a name="turron-salado">
+                <h3>Turrón salado de queso y frutos secos</h3>
+                <img src="src/turron-salado.png" alt="Turrón salado con frutos secos">
+            </a>
+        </section>
+        <section>
+            <a name="piruletas-parmesano">
+                <h3>Piruletas de parmesano</h3>
+                <img src="src/piruletas-parmesano.png" alt="Piruletas de parmesano">
+            </a>
+        </section>
+        <section>
+            <a name="frittata-calabacin">
+                <h3>Frittata de calabacín, guisantes y queso de cabra</h3>
+                <img src="src/frittata-calabacín-guisantes-queso-1.jpg" alt="frittata calabacín">
+            </a>
+        </section>
+        <section>
+            <a name="menestra-riojana">
+                <h3>Menestra de verduras a la Riojana</h3>
+                <img src="src/menestra-de-verduras-riojana.jpg" alt="menestra de verduras a la riojana">
+            </a>
+        </section>
+        <section>
+            <a name="dorayakis">
+                <h3>Dorayakis</h3>
+                <img src="src/dorayaki.jpg" alt="dorayakis">
+            </a>
+        </section>
+        <section>
+            <a name="tarta-guinness">
+                <h3>Tarta Guinness</h3>
+                <img src="src/tarta-guinness.jpg" alt="tarta guinness">
+            </a>
+        </section>
+    </article>
+    <article id="columna3">
+        <section>
+            <h2>Aqui puedes ver los post más visitados</h2>
+            <ol>
+                    <li><a href="#frittata-calabacin">Frittata de calabacín, guisantes y queso de cabra</a></li>
+                    <li><a href="#piruletas-parmesano">Piruletas de parmesano</a></li>
+                    <li><a href="#dorayakis">Dorayakis</a></li>
+            </ol>
+        </section>
+    </article>
+
+    <footer>
+        <div id="pie">
+            <p>Si quieres ponerte en contacto con nosotros pulsa <a href="#">aqui.</a></p>
+            
+        </div>
+
+    </footer>
+</body>
+</html>
+<!--En esta práctica final te vamos a pedir que diseñes una página web compuesta por tres columnas. En la primera de ellas, te vamos a pedir que introduzcas una serie 
+    de enlaces que representarán un menú de opciones. Más bien representarán unos anclas a los contenidos de la columna central.
+En la columna central, vamos a incluir un listado de posts de un blog ficticio. Cada post deberá incluir lo expuesto en el prototipo mostrado. 
+Por lo que, tendrás que jugar con todos los detalles en las tipografías, en la disposición, en el layout, en los márgenes. No sólo pienses técnicamente,
+ piensa en los detalles y en cómo replicar con éxito la estructura. Identifica y haz las relaciones oportunas con los conceptos aprendidos.
+
+En la tercera columna, volvemos a poner referencias a posts, en este caso destacados. Esta vez, la disposición de estos cambia. Intenta identificar la 
+mejor manera de realizar la composición estructural con HTML + CSS.
+
+No te olvides del header y el footer. Créalos teniendo en cuenta el orden de representación. Incluye logos, copyrights como símbolos, etc. Todo lo que se te 
+ocurra y que nos demuestre que controlas completamente todo lo que te hemos expuesto.
+
+Es un ejercicio recopilatorio y sobre todo de detalle. Aquí es donde realmente marcarás la diferencia entre estar preparado para afrontar los módulos avanzado
+o no (y sólo hablo ahora de los de HTML5 y CSS Avanzado).
+
+.-->
